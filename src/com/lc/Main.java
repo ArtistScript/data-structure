@@ -12,11 +12,8 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        char[][] board=new char[][]{
-                {'A','B','C','E'},
-                {'S','F','C','S'},
-                {'A','D','E','E'}};
-        boolean res=new Solution79().exist(board,"ABCCED");
+        int[] nums=new int[]{};
+        int res=new Solution80().removeDuplicates(nums);
         System.out.println(res);
     }
 }
