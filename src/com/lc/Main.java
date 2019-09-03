@@ -12,9 +12,11 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        String a="11";
-        String b="1";
-        String re=new Solution67().addBinary(a,b);
-        System.out.println(re);
+        char[][] board=new char[][]{
+                {'A','B','C','E'},
+                {'S','F','C','S'},
+                {'A','D','E','E'}};
+        boolean res=new Solution79().exist(board,"ABCCED");
+        System.out.println(res);
     }
 }
