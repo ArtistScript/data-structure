@@ -12,8 +12,9 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] nums=new int[]{};
-        int res=new Solution80().removeDuplicates(nums);
-        System.out.println(res);
+        int[] nums1=new int[]{1,2,3,0,0,0};
+        int[] nums2=new int[]{2,5,6};
+        new Solution88().merge(nums1,3,nums2,3);
+        System.out.println();
     }
 }
