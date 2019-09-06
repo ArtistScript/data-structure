@@ -12,9 +12,13 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] nums1=new int[]{1,2,3,0,0,0};
-        int[] nums2=new int[]{2,5,6};
-        new Solution88().merge(nums1,3,nums2,3);
-        System.out.println();
+        TreeNode a=new TreeNode(1);
+        TreeNode b=new TreeNode(2);
+        TreeNode c=new TreeNode(3);
+        a.left=null;
+        a.right=b;
+        b.left=c;
+        List<Integer> res=new Solution94().inorderTraversal(a);
+        System.out.println(res);
     }
 }
